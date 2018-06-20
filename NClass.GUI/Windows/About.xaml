@@ -1,0 +1,25 @@
+﻿<Window x:Class="NClass.GUI.Windows.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NClass.GUI.Windows"
+        mc:Ignorable="d"
+        Title="About" Height="265.966" Width="283.613" WindowStyle="ThreeDBorderWindow" ShowInTaskbar="False" ResizeMode="NoResize">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="Close"></CommandBinding>
+        
+    </Window.CommandBindings>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" >
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" >
+                <Image HorizontalAlignment="Left"  Margin="0,20,0,0" VerticalAlignment="Top"  Source="pack://siteoforigin:,,,/Resources/nclass.ico"/>
+                <TextBlock Margin="20,30,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" FontSize="21.333">NClass</TextBlock>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Left" Margin="20,10,0,0" TextWrapping="Wrap" Text="UML Class Designer (v 2.0)" VerticalAlignment="Top"/>
+            <Button Margin="20, 20, 0, 0" Content="Close" Width="75" Command="ApplicationCommands.Close"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

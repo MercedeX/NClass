@@ -1,0 +1,65 @@
+﻿<Window x:Class="NClass.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NClass.GUI"
+        xmlns:c="clr-namespace:NClass.GUI"
+        mc:Ignorable="d"
+        Title="NClass" Height="350" Width="525"  >
+    <Window.CommandBindings>
+        <CommandBinding Command="c:Commands.Exit" ></CommandBinding>
+        <CommandBinding Command="c:Commands.ViewToolbar"></CommandBinding>
+        <CommandBinding Command="c:Commands.ViewNavigator"></CommandBinding>
+        <CommandBinding Command="c:Commands.ViewExplorer"></CommandBinding>
+        <CommandBinding Command="c:Commands.ViewStatusbar"></CommandBinding>
+        <CommandBinding Command="c:Commands.Options"></CommandBinding>
+        <CommandBinding Command="c:Commands.About" Executed="CommandBinding_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" >
+                <MenuItem Header="_File">
+                    <MenuItem Command="New"></MenuItem>
+                    <MenuItem Command="Open"></MenuItem>
+                    <Separator/>
+                    <MenuItem Command="Save"></MenuItem>
+                    <MenuItem Command="SaveAs"></MenuItem>
+                    <MenuItem Command="Close"></MenuItem>
+                    <Separator />
+                    <MenuItem Command="c:Commands.Exit"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    
+                </MenuItem>
+                <MenuItem Header="_View">
+                    <MenuItem Command="c:Commands.ViewToolbar"></MenuItem>
+                    <MenuItem Command="c:Commands.ViewStatusbar"></MenuItem>
+                    <Separator/>
+                    <MenuItem Command="c:Commands.ViewExplorer"></MenuItem>
+                    <MenuItem Command="c:Commands.ViewNavigator"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Tools">
+                    <Separator/>
+                    <MenuItem Command="c:Commands.Options"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Command="c:Commands.About"></MenuItem>
+                </MenuItem>
+                
+            </Menu>
+            <ToolBarTray  DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button Command="ApplicationCommands.New">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/NClass.GUI;component/Resources/new_document.png" />
+                             </StackPanel>
+                    </Button>
+                </ToolBar>
+                
+            </ToolBarTray>
+        </DockPanel>
+        <Calendar Margin="0,124,243,0" />
+
+    </Grid>
+</Window>

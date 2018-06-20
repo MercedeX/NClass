@@ -19,12 +19,14 @@ using System.Drawing;
 using System.Windows.Forms;
 using NClass.Translations;
 using NClass.Core;
+using NClass.CodeGenerator;
 
 namespace NClass.DiagramEditor.ClassDiagram
 {
 	public sealed partial class DiagramDynamicMenu : DynamicMenu
 	{
 		static DiagramDynamicMenu _default = new DiagramDynamicMenu();
+        ICodeGeneratorUIHandler _cgHandler = null;
 
 		ToolStripMenuItem[] menuItems;
 		Diagram diagram = null;
@@ -278,22 +280,54 @@ namespace NClass.DiagramEditor.ClassDiagram
 		{
 			if (diagram != null && diagram.Project != null)
 			{
-				using (CodeGenerator.Dialog dialog = new CodeGenerator.Dialog())
-				{
-					try
-					{
-						dialog.ShowDialog(diagram.Project);
-					}
-					catch (Exception ex)
-					{
-						MessageBox.Show(ex.Message, Strings.UnknownError,
-							MessageBoxButtons.OK, MessageBoxIcon.Error);
-					}
-				}
+                CodeGeneratorUIHandler?.ShowCodeGenerationUI();
+				//using (var dialog = new NClass.x.CodeGenerationDialog(diagram.Project))
+				//{
+				//	try
+				//	{
+				//		if(DialogResult.OK== dialog.ShowDialog())
+    //                    {
+    //                        var model = dialog.Result;
+    //                        GenerateCode(model);
+    //                    }
+				//	}
+				//	catch (Exception ex)
+				//	{
+				//		MessageBox.Show(ex.Message, Strings.UnknownError,
+				//			MessageBoxButtons.OK, MessageBoxIcon.Error);
+				//	}
+				//}
 			}
 		}
 
-		private void mnuSaveAsImage_Click(object sender, EventArgs e)
+        //private void GenerateCode(CodeGenerationModel model)
+        //{
+        //    if (diagram.Project != null)
+        //    {
+        //        try
+        //        {
+        //            var generator = new Generator(diagram.Project, model.Solution);
+        //            GenerationResult result = generator.Generate(model.Destination);
+        //            switch (result)
+        //            {
+        //                case GenerationResult.Success:
+        //                    MessageBox.Show(Strings.CodeGenerationCompleted, Strings.CodeGeneration, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //                    break;
+        //                case GenerationResult.Error:
+        //                    MessageBox.Show(Strings.CodeGenerationFailed, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                    break;
+        //            }
+                    
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            MessageBox.Show(ex.Message, Strings.UnknownError,
+        //                MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+        //    }
+        //}
+
+        private void mnuSaveAsImage_Click(object sender, EventArgs e)
 		{
 			if (diagram != null && !diagram.IsEmpty)
 				diagram.SaveAsImage();
@@ -400,6 +434,18 @@ namespace NClass.DiagramEditor.ClassDiagram
 				diagram.DeleteSelectedElements();
 		}
 
-		#endregion
-	}
+        #endregion
+
+        public ICodeGeneratorUIHandler CodeGeneratorUIHandler
+        {
+            get => _cgHandler;
+            set => _cgHandler = value;
+        }
+    }
+
+
+    public interface ICodeGeneratorUIHandler
+    {
+        void ShowCodeGenerationUI();
+    }
 }

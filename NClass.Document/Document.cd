@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NClass.Document.Entity">
+    <Position X="11.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACEBAAAAAEAAAAAAAAAIAAAAEAAAAAAA=</HashCode>
+      <FileName>Entity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.Document.Model" Collapsed="true">
+    <Position X="5.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAIAIAAAAAAIAAAQAAAgAAAAAAAEAIAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.Document.Relation">
+    <Position X="1" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAEAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>Relation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.Document.Project" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.DependencyRelation">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DependencyRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.AssociationRelation">
+    <Position X="3.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AssociationRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.AggregationRelation">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregationRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.CompositionRelationship">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompositionRelationship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.GeneralizationRelationship">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneralizationRelationship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.ClassEntity">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ClassEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.EnumEntity">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.StructureEntity">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StructureEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.DelegateEntity" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DelegateEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.CommentEntity" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommentEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.InterfaceEntity" Collapsed="true">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfaceEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.EntityMember">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>EntityMember.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.Document.FieldMember">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FieldMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.PropertyMember">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PropertyMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.MethodMember">
+    <Position X="13.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MethodMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.ConstructorMember">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConstructorMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.DestructorMember">
+    <Position X="13.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DestructorMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.Document.ConstantMember">
+    <Position X="13.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConstantMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="NClass.Document.Shape">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAQAAAAAAAAIAAAAACEAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>Shape.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NClass.Document.Location" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NClass.Document.Size" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Size.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="NClass.Document.IEntity">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAEAAAAAAAAAIAAAAEAAAAAAA=</HashCode>
+      <FileName>IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.Document.IModel">
+    <Position X="5.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.Document.IRelation">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAEAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>IRelation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.Document.IEntityMember">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>IEntityMember.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NClass.Document.AccessibilityModifier" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAIAAAAAQAA=</HashCode>
+      <FileName>AccessibilityModifier.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NClass.Document.MapType" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAEAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShapeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

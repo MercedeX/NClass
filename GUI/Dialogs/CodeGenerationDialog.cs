@@ -21,18 +21,63 @@ using NClass.Core;
 using NClass.CSharp;
 using NClass.Java;
 using NClass.Translations;
+using System.Collections.Generic;
+using System.Linq;
+using NClass.CodeGenerator;
 
-namespace NClass.CodeGenerator
+namespace NClass.GUI.Dialogs
 {
-	public partial class Dialog : Form
-	{
-		Project project = null;
 
-		public Dialog()
+	public partial class CodeGenerationDialog : Form
+	{
+		readonly Project _project = null;
+
+        CodeGenerationModel _model = new CodeGenerationModel();
+
+		public CodeGenerationDialog(Project project)
 		{
 			InitializeComponent();
+
+
 			importToolStrip.Renderer = ToolStripSimplifiedRenderer.Default;
-		}
+
+            _project = project;
+
+            _model.Destination = Settings.Default.DestinationPath;
+            _model.HasNotImplementedException = Settings.Default.UseNotImplementedExceptions;
+            _model.IndentSize = Settings.Default.IndentSize;
+            _model.Language = CSharpLanguage.Instance;
+            _model.Solution = Settings.Default.SolutionType;
+            _model.UseTabsForIndent = Settings.Default.UseTabsForIndents;
+           
+
+
+            txtDestination.TextChanged += (obj, arg) =>  _model.Destination = txtDestination.Text;
+            cboLanguage.SelectedIndexChanged += (obj, arg) => UpdateImportList();
+            btnBrowse.Click += (obj, arg) => txtDestination.Text = ChooseDestination(txtDestination.Text);
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            UpdateTexts();
+
+
+            lstImportList.Items.Clear();
+            UpdateImportList();
+
+            txtDestination.Text = _model.Destination;
+            chkUseTabs.Checked = _model.UseTabsForIndent;
+            updIndentSize.Value = _model.IndentSize;
+            cboSolutionType.SelectedIndex = (int)_model.Solution;
+            chkNotImplemented.Checked = _model.HasNotImplementedException;
+            cboLanguage.SelectedIndex = _model.Language is CSharpLanguage ? 0 : 1;
+
+        }
+
+
+        public CodeGenerationModel Result => _model;
 
 		private void UpdateTexts()
 		{
@@ -51,19 +96,6 @@ namespace NClass.CodeGenerator
 			chkUseTabs.Text = Strings.UseTabs;
 			lblIndentSize.Text = Strings.IndentSize;
 			chkNotImplemented.Text = Strings.UseNotImplementedExceptions;
-		}
-
-		private void UpdateValues()
-		{
-			lstImportList.Items.Clear();
-			UpdateImportList();
-
-			txtDestination.Text = Settings.Default.DestinationPath;
-			chkUseTabs.Checked = Settings.Default.UseTabsForIndents;
-			updIndentSize.Value = Settings.Default.IndentSize;
-			cboSolutionType.SelectedIndex = (int) Settings.Default.SolutionType;
-			chkNotImplemented.Checked = Settings.Default.UseNotImplementedExceptions;
-			cboLanguage.SelectedIndex = 0;
 		}
 
 		private void UpdateImportList()
@@ -85,47 +117,49 @@ namespace NClass.CodeGenerator
 			}
 		}
 
-		private void SaveImportList()
+		//private void SaveImportList()
+		//{
+		//	StringCollection importList = new StringCollection();
+		//	foreach (object import in lstImportList.Items)
+		//		importList.Add(import.ToString());
+
+		//	//TODO: ezt is másképp kéne
+		//	if (object.Equals(cboLanguage.SelectedItem, "C#"))
+		//		Settings.Default.CSharpImportList = importList;
+		//	else if (object.Equals(cboLanguage.SelectedItem, "Java"))
+		//		Settings.Default.JavaImportList = importList;
+		//}
+
+		//public DialogResult ShowDialog(Project project)
+		//{
+		//	//this._project = project;
+
+		//	//UpdateTexts();
+		//	//UpdateValues();
+		//	ShowDialog();
+            
+
+  //          //if (DialogResult == DialogResult.OK)
+  //          //	Settings.Default.Save();
+  //          //else
+  //          //	Settings.Default.Reload();
+
+
+  //          return DialogResult;
+		//}
+
+		private string ChooseDestination(string path)
 		{
-			StringCollection importList = new StringCollection();
-			foreach (object import in lstImportList.Items)
-				importList.Add(import.ToString());
-
-			//TODO: ezt is másképp kéne
-			if (object.Equals(cboLanguage.SelectedItem, "C#"))
-				Settings.Default.CSharpImportList = importList;
-			else if (object.Equals(cboLanguage.SelectedItem, "Java"))
-				Settings.Default.JavaImportList = importList;
-		}
-
-		public void ShowDialog(Project project)
-		{
-			this.project = project;
-
-			UpdateTexts();
-			UpdateValues();
-			ShowDialog();
-			
-			if (DialogResult == DialogResult.OK)
-				Settings.Default.Save();
-			else
-				Settings.Default.Reload();
-		}
-
-		private void btnBrowse_Click(object sender, EventArgs e)
-		{
-			using (FolderBrowserDialog dialog = new FolderBrowserDialog())
+            var ret = path;
+			using (FolderBrowserDialog dialog = new FolderBrowserDialog {
+                Description = Strings.GeneratorTargetDir,
+                SelectedPath = path
+            })
 			{
-				dialog.Description = Strings.GeneratorTargetDir;
-				dialog.SelectedPath = txtDestination.Text;
-				if (dialog.ShowDialog() == DialogResult.OK)
-					txtDestination.Text = dialog.SelectedPath;
+				if (dialog.ShowDialog() == DialogResult.OK) 
+					ret = dialog.SelectedPath;
 			}
-		}
-
-		private void cboLanguage_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			UpdateImportList();
+            return ret; 
 		}
 
 		private void toolMoveUp_Click(object sender, EventArgs e)
@@ -137,11 +171,11 @@ namespace NClass.CodeGenerator
 				lstImportList.Items[index] = lstImportList.Items[index - 1];
 				lstImportList.Items[index - 1] = temp;
 				lstImportList.SelectedIndex--;
-				SaveImportList();
+				//SaveImportList();
 			}
 		}
 
-		private void toolMoveDown_Click(object sender, EventArgs e)
+        private void toolMoveDown_Click(object sender, EventArgs e)
 		{
 			int index = lstImportList.SelectedIndex;
 			if (index < lstImportList.Items.Count - 1)
@@ -150,7 +184,7 @@ namespace NClass.CodeGenerator
 				lstImportList.Items[index] = lstImportList.Items[index + 1];
 				lstImportList.Items[index + 1] = temp;
 				lstImportList.SelectedIndex++;
-				SaveImportList();
+				//SaveImportList();
 			}
 		}
 
@@ -164,7 +198,7 @@ namespace NClass.CodeGenerator
 					lstImportList.SelectedIndex = selectedIndex;
 				else
 					lstImportList.SelectedIndex = lstImportList.Items.Count - 1;
-				SaveImportList();
+				//SaveImportList();
 			}
 		}
 
@@ -194,7 +228,7 @@ namespace NClass.CodeGenerator
 			{
 				lstImportList.Items.Add(txtNewImport.Text);
 				txtNewImport.Text = string.Empty;
-				SaveImportList();
+				//SaveImportList();
 			}
 		}
 
@@ -203,7 +237,7 @@ namespace NClass.CodeGenerator
 			lstImportList.Items.Add(txtNewImport.Text);
 			txtNewImport.Text = string.Empty;
 			txtNewImport.Focus();
-			SaveImportList();
+			//SaveImportList();
 		}
 
 		private void chkUseTabs_CheckedChanged(object sender, EventArgs e)
@@ -216,49 +250,19 @@ namespace NClass.CodeGenerator
 
 		private void btnGenerate_Click(object sender, EventArgs e)
 		{
-			if (project != null)
-			{
-				ValidateSettings();
+            _model.Language = cboLanguage.SelectedIndex == 0 ? CSharpLanguage.Instance as Language : JavaLanguage.Instance as Language;
+            _model.Solution = cboSolutionType.SelectedIndex == 0 ? SolutionType.VisualStudio2005 : SolutionType.VisualStudio2008;
+            foreach(string it in lstImportList.Items)
+            {
+                _model.Usings.Add(it);
+            }
+            _model.IndentSize = Convert.ToInt32(updIndentSize.Value);
+            _model.UseTabsForIndent = chkUseTabs.Checked;
+            _model.HasNotImplementedException = chkNotImplemented.Checked;
 
-				try
-				{
-					SolutionType solutionType = (SolutionType) cboSolutionType.SelectedIndex;
-					Generator generator = new Generator(project, solutionType);
-					string destination = txtDestination.Text;
-
-					GenerationResult result = generator.Generate(destination);
-					if (result == GenerationResult.Success)
-					{
-						MessageBox.Show(Strings.CodeGenerationCompleted,
-							Strings.CodeGeneration, MessageBoxButtons.OK,
-							MessageBoxIcon.Information);
-					}
-					else if (result == GenerationResult.Error)
-					{
-						MessageBox.Show(Strings.CodeGenerationFailed,
-							Strings.Error, MessageBoxButtons.OK,
-							MessageBoxIcon.Error);
-					}
-					else // Cancelled
-					{
-						this.DialogResult = DialogResult.None;
-					}
-				}
-				catch (Exception ex)
-				{
-					MessageBox.Show(ex.Message, Strings.UnknownError,
-						MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
-			}
+            DialogResult = DialogResult.OK;
+            Close();
 		}
 
-		private void ValidateSettings()
-		{
-			Settings.Default.DestinationPath = txtDestination.Text;
-			Settings.Default.UseTabsForIndents = chkUseTabs.Checked;
-			Settings.Default.IndentSize = (int) updIndentSize.Value;
-			Settings.Default.SolutionType = (SolutionType) cboSolutionType.SelectedIndex;
-			Settings.Default.UseNotImplementedExceptions = chkNotImplemented.Checked;
-		}
 	}
 }

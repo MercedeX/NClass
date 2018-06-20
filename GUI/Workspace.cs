@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using NClass.Core;
 using NClass.Translations;
+using System.Linq;
 
 namespace NClass.GUI
 {
@@ -48,15 +49,13 @@ namespace NClass.GUI
 			get { return projects; }
 		}
 
-		public int ProjectCount
-		{
-			get { return projects.Count; }
-		}
+        //public int ProjectCount
+        //{
+        //	get { return projects.Count; }
+        //}
 
-		public bool HasProject
-		{
-			get { return (ProjectCount > 0); }
-		}
+        public bool HasProject => projects.Any();
+
 
 		public Project ActiveProject
 		{
@@ -66,19 +65,25 @@ namespace NClass.GUI
 			}
 			set
 			{
-				if (value == null)
-				{
-					if (activeProject != null)
-					{
-						activeProject = null;
-						OnActiveProjectChanged(EventArgs.Empty);
-					}
-				}
-				else if (activeProject != value && projects.Contains(value))
-				{
-					activeProject = value;
-					OnActiveProjectChanged(EventArgs.Empty);
-				}
+                if (activeProject != value)
+                {
+                    if ((value == null) || (value != null && projects.Contains(value)))
+                        activeProject = value;
+                    OnActiveProjectChanged(EventArgs.Empty);
+                }
+    //            if (value == null)
+				//{
+				//	if (activeProject != null)
+				//	{
+				//		activeProject = null;
+				//		OnActiveProjectChanged(EventArgs.Empty);
+				//	}
+				//}
+				//else if (activeProject != value && projects.Contains(value))
+				//{
+				//	activeProject = value;
+				//	OnActiveProjectChanged(EventArgs.Empty);
+				//}
 			}
 		}
 

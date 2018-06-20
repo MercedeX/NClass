@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System.IO;
 using NClass.Translations;
+using NClass.Document;
 
 namespace NClass.Core
 {
@@ -37,6 +38,8 @@ namespace NClass.Core
 		public event EventHandler FileStateChanged;
 		public event ProjectItemEventHandler ItemAdded;
 		public event ProjectItemEventHandler ItemRemoved;
+
+        List<IClassModel> _models = new List<IClassModel>();
 
 		public Project()
 		{
@@ -198,6 +201,8 @@ namespace NClass.Core
 
 			OnItemAdded(new ProjectItemEventArgs(item));
 			OnModified(EventArgs.Empty);
+
+
 		}
 
 		public void Remove(IProjectItem item)

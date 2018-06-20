@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <menuStrip>
+    <menuItem title="Diagram" />
+    <menuItem title="_"/>
+    <menuItem title="Format" />
+    <menuItem title="Align" />
+    <menuItem title="_"/>
+    <menuItem title="MakeSameSize" />
+    <menuItem title="SameWidth" />
+    <menuItem title="SameHeight" />
+    <menuItem title="SameSize" />
+    <menuItem title="_"/>
+    <menuItem title="AutoWidth" />
+    <menuItem title="AutoHeight" />
+    <menuItem title="_"/>
+
+    <!--<menuItem title="elementsToolStrip = new System.Windows.Forms.ToolStrip />
+			<menuItem title="toolSepEntities = new System.Windows.Forms.ToolStripSeparator />
+			<menuItem title="toolSepRelationships = new System.Windows.Forms.ToolStripSeparator />-->
+
+    <menuItem title="AddNewElement" />
+    <menuItem title="NewClass" />
+    <menuItem title="NewStructure" />
+    <menuItem title="NewInterface" />
+    <menuItem title="NewEnum" />
+    <menuItem title="NewDelegate" />
+    <menuItem title="NewComment" />
+    <menuItem title="_"/>
+    <menuItem title="NewAssociation" />
+    <menuItem title="NewComposition" />
+    <menuItem title="NewAggregation" />
+    <menuItem title="NewGeneralization" />
+    <menuItem title="NewRealization" />
+    <menuItem title="NewDependency" />
+    <menuItem title="NewNesting" />
+    <menuItem title="NewCommentRelationship" />
+    <menuItem title="MembersFormat" />
+    <menuItem title="ShowType" />
+    <menuItem title="ShowParameters" />
+    <menuItem title="ShowParameterNames" />
+    <menuItem title="ShowInitialValue" />
+    <menuItem title="GenerateCode" />
+    <menuItem title="SaveAsImage" />
+    <menuItem title="AlignTop" />
+    <menuItem title="AlignLeft" />
+    <menuItem title="AlignBottom" />
+    <menuItem title="AlignRight" />
+    <menuItem title="AlignHorizontal" />
+    <menuItem title="AlignVertical" />
+    <menuItem title="AutoLayout" />
+    <menuItem title="CollapseAll" />
+    <menuItem title="ExpandAll" />
+
+    <!--<menuItem title="toolNewClass = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewStructure = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewInterface = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewEnum = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewDelegate = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewComment = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewAssociation = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewComposition = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewAggregation = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewGeneralization = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewRealization = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewDependency = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewNesting = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolNewCommentRelationship = new System.Windows.Forms.ToolStripButton />
+			<menuItem title="toolDelete = new System.Windows.Forms.ToolStripButton />-->
+
+    <menuItem title="AutoSize" />
+
+  </menuStrip>
+</menu>

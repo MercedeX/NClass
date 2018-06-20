@@ -38,7 +38,9 @@ namespace NClass.DiagramEditor
 			get { return preferredIndex; }
 		}
 
-		public IEnumerator<ToolStripMenuItem> GetEnumerator()
+       
+
+        public IEnumerator<ToolStripMenuItem> GetEnumerator()
 		{
 			return GetMenuItems().GetEnumerator();
 		}
@@ -54,4 +56,6 @@ namespace NClass.DiagramEditor
 
 		public abstract void SetReference(IDocument document);
 	}
+
+
 }

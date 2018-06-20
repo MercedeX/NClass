@@ -29,10 +29,11 @@ using NClass.DiagramEditor;
 using NClass.DiagramEditor.ClassDiagram;
 using NClass.GUI.Dialogs;
 using NClass.Translations;
+using NClass.CodeGenerator;
 
 namespace NClass.GUI
 {
-	public sealed partial class MainForm : Form
+	public sealed partial class MainForm : Form, ICodeGeneratorUIHandler
 	{
 		DocumentManager docManager = new DocumentManager();
 		bool showModelExplorer = true;
@@ -329,6 +330,8 @@ namespace NClass.GUI
 					if (toolStrip != null)
 						toolStripContainer.TopToolStripPanel.Controls.Remove(toolStrip);
 					dynamicMenu.SetReference(null);
+                    if(dynamicMenu is DiagramDynamicMenu)
+                        (dynamicMenu as DiagramDynamicMenu).CodeGeneratorUIHandler = this;
 				}
 				if (newMenu != null)
 				{
@@ -346,8 +349,11 @@ namespace NClass.GUI
 						toolStrip.Left = standardToolStrip.Right;
 						toolStripContainer.TopToolStripPanel.Controls.Add(toolStrip);
 					}
-				}
-				dynamicMenu = newMenu;
+                    if (newMenu is DiagramDynamicMenu)
+                        (newMenu as DiagramDynamicMenu).CodeGeneratorUIHandler = this;
+
+                }
+                dynamicMenu = newMenu;
 			}
 		}
 
@@ -917,6 +923,57 @@ namespace NClass.GUI
 			tabbedWindow.Canvas.Zoom = toolZoom.ZoomValue;
 		}
 
-		#endregion
-	}
+
+
+        #endregion
+
+        public void ShowCodeGenerationUI()
+        {
+            var prj = Workspace.Default.ActiveProject;
+            using (var dialog = new CodeGenerationDialog(prj))
+            {
+                try
+                {
+                    if (DialogResult.OK == dialog.ShowDialog())
+                    {
+                        var model = dialog.Result;
+                        GenerateCode(model, prj);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, Strings.UnknownError,
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void GenerateCode(CodeGenerationModel model, Project prj)
+        {
+            if (prj != null)
+            {
+                try
+                {
+                    var generator = new Generator(prj, model.Solution);
+                    GenerationResult result = generator.Generate(model.Destination);
+                    switch (result)
+                    {
+                        case GenerationResult.Success:
+                            MessageBox.Show(Strings.CodeGenerationCompleted, Strings.CodeGeneration, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            break;
+                        case GenerationResult.Error:
+                            MessageBox.Show(Strings.CodeGenerationFailed, Strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, Strings.UnknownError,
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+    }
 }

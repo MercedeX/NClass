@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NClass.DiagramEditor.AbsoluteMouseEventArgs" Collapsed="true">
+    <Position X="29" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAABAIAAAAAAAEAIAABAAAAAAAAAAAABgAAAAYAA=</HashCode>
+      <FileName>AbsoluteMouseEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.Canvas" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aJCAIgKQACAIkISBUACAQAECRFIAABSKJAQBVIgzgAw=</HashCode>
+      <FileName>Canvas.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.Clipboard" Collapsed="true">
+    <Position X="30.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABABAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Clipboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ContextMenu" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAQAAAAAABACAACAAAAAACAAAA=</HashCode>
+      <FileName>ContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.DocumentEventArgs" Collapsed="true">
+    <Position X="6.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>DocumentEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.DocumentManager" Collapsed="true">
+    <Position X="37.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAQAQABEAEAiABACAAgAQoAAAAiAAQAhACBQEI=</HashCode>
+      <FileName>DocumentManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.DocumentMovedEventArgs" Collapsed="true">
+    <Position X="6.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAACAAAAAgAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DocumentMovedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.DynamicMenu" Collapsed="true">
+    <Position X="3.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIEACAAAAAABAAAAAAAABAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>DynamicMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.PopupWindowEventArgs" Collapsed="true">
+    <Position X="36" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
+      <FileName>EditorControlEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.EventArgs&lt;T&gt;" Collapsed="true">
+    <Position X="32.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.GdiGraphics" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAJAAIAAAGACAgEQAAAAAAIiJAEAAIAAAwAA=</HashCode>
+      <FileName>GdiGraphics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.ImageCreator" Collapsed="true">
+    <Position X="37.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgQAAAQAAABAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ImageCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.Intersector&lt;T&gt;" Collapsed="true">
+    <Position X="29" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAiAABAAAAAAAAAAACIQAAAAAA=</HashCode>
+      <FileName>Intersector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.MonoHelper" Collapsed="true">
+    <Position X="32.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MonoHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.OrderedList&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAQAAAAAAEAAIAAAAAAEAAAAAAAAAMCAAAAAAA=</HashCode>
+      <FileName>OrderedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.PopupWindow" Collapsed="true">
+    <Position X="16.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAABAAAAIAAAAABAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>PopupWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.Settings" Collapsed="true">
+    <Position X="32.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEAAEAAQAAACQAAIIAAIAABAAAACAAgAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.Style" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JLeb8eT2FuBmKDmsjrqrOpY6a5r0QcgQKPlLgIjHV3o=</HashCode>
+      <FileName>Style.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.ToolStripSimplifiedRenderer" Collapsed="true">
+    <Position X="36" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ToolStripSimplifiedRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ConnectionCreator" Collapsed="true">
+    <Position X="32.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMIAAAABAAgAgGAAoEQAAAAFAABEAQAAQBAICCIAIA=</HashCode>
+      <FileName>ClassDiagram\ConnectionCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Diagram" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+gWM/QAKpOUD7sWhE71uwTAEp0CanBAvtDDEQfXHlkQ=</HashCode>
+      <FileName>ClassDiagram\Diagram.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.DiagramDynamicMenu" Collapsed="true">
+    <Position X="3.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gZDMUT3ElpIUiB2dIRQy+GQSCsIgZO1h3QgBFTNEEBg=</HashCode>
+      <FileName>ClassDiagram\DiagramDynamicMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.DiagramElement" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MBMAQEAQAoBQEkDREBwAEBAoCDTAFAEFYIEBSEDywAg=</HashCode>
+      <FileName>ClassDiagram\DiagramElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ElementContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAgAQAAAAAAAAAJAAAAAQBBAA=</HashCode>
+      <FileName>ClassDiagram\ElementContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ElementList&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgQAACAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ClassDiagram\ElementList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Icons" Collapsed="true">
+    <Position X="36" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQQAiAAAAAAAQABAAAAAQQQEAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Icons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.MoveEventArgs" Collapsed="true">
+    <Position X="34.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ClassDiagram\MoveEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Arrowhead" Collapsed="true">
+    <Position X="30.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAUAAAABAAAAAAAAIAAAAAAAAACCAiAAAAQ=</HashCode>
+      <FileName>ClassDiagram\Connections\Arrowhead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Association" Collapsed="true">
+    <Position X="17.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAYBCKAAABAAAgAAQEISQAAaAEKJAAElACABAEACAKA=</HashCode>
+      <FileName>ClassDiagram\Connections\Association.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.BendPoint" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAQACABCAEAgAABAYAAAAAECBAgAAAAIQAQAgQYBA=</HashCode>
+      <FileName>ClassDiagram\Connections\BendPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.BendPointEventArgs" Collapsed="true">
+    <Position X="36" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Connections\BendPointEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.CommentConnection" Collapsed="true">
+    <Position X="22" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAABAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Connections\CommentConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Connection" Collapsed="true">
+    <Position X="20.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4CCgRSIAEBxgAhCEgk4IECoqADbDFAwlIGVjIAI+4gE=</HashCode>
+      <FileName>ClassDiagram\Connections\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Dependency" Collapsed="true">
+    <Position X="24.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAEAIAAACAAAAAAAAAAABAAQAAAE=</HashCode>
+      <FileName>ClassDiagram\Connections\Dependency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Generalization" Collapsed="true">
+    <Position X="26.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAEAAAEAAAAACAAAAAEAAAAABAAAAAAE=</HashCode>
+      <FileName>ClassDiagram\Connections\Generalization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Nesting" Collapsed="true">
+    <Position X="15.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAEAAAAAAAACAAAAAACABAACCAAg=</HashCode>
+      <FileName>ClassDiagram\Connections\Nesting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Connections.Realization" Collapsed="true">
+    <Position X="19.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABAAABAAAEAIAAACAAAAAAAAAAABAAAAAAE=</HashCode>
+      <FileName>ClassDiagram\Connections\Realization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.AssociationContextMenu" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAEABAgAAAggAAAAAAgMAAIAQACCAAEAAAIBEAQAQA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\AssociationContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.BlankContextMenu" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gVCEASBEhAIQAAUEAQAjICAQCJACSPEAQQAAAABMABg=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\BlankContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.CommentShapeContextMenu" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAAAAAAAAAAAAAIAAAAAACGAAAAAAAAAAAACA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\CommentShapeContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.ConnectionContextMenu" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAABAAAAEAAAAAAAAAIAAAAAACCAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\ConnectionContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.DiagramContextMenu" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACAAAAAAAAAAAAACAACAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\DiagramContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.GeneralContextMenu" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAAAAQIAIgAEAAIAAIAIQCCAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\GeneralContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.ShapeContextMenu" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAQBAEgIIAgAABIBAAIEQAAEACCCFAmAAAAQAAAAA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\ShapeContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.ContextMenus.TypeShapeContextMenu" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAAAIIAACRAAQAKAAAAAIiKAEAAAAAAAQAAAA=</HashCode>
+      <FileName>ClassDiagram\ContextMenus\TypeShapeContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.AssociationDialog" Collapsed="true">
+    <Position X="32.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkCBARAAACAAgAEAAIGSAoACAAAAAEAAABoCQAAAAQQ=</HashCode>
+      <FileName>ClassDiagram\Dialogs\AssociationDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.DelegateDialog" Collapsed="true">
+    <Position X="9.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEAAAAAAABAAAAABAEAQAAAAAAAAQAAAIAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\DelegateDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.PrintingSettings" Collapsed="true">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAgQ=</HashCode>
+      <FileName>ClassDiagram\Dialogs\DiagramPrintDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.DiagramPrintDialog" Collapsed="true">
+    <Position X="36" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgIFCAVGAIgYEwBEDCUAESAA4AABAKCQABCAAE4gI=</HashCode>
+      <FileName>ClassDiagram\Dialogs\DiagramPrintDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.EditCommentDialog" Collapsed="true">
+    <Position X="29" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAGAAACAAAACAQAAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\EditCommentDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.EnumDialog" Collapsed="true">
+    <Position X="11.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEAAAAAAABAAAAABAEAQAAAAAAAAQAAAIAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\EnumDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.ImplementDialog" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAABAAAAAAAACAAAAAAEEAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\ImplementDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.ListDialog" Collapsed="true">
+    <Position X="10.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAOBEAgCAgCAgADGCABAYSQEAAQCBEBYAQEIAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\ListDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.MembersDialog" Collapsed="true">
+    <Position X="30.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MUkLvBBiXyCwKDBKQi3BMKOrMIydQMCMiYRQAgQAiMc=</HashCode>
+      <FileName>ClassDiagram\Dialogs\MembersDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.OverrideDialog" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAEQAAAEAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\OverrideDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Dialogs.TreeDialog" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAEAAECAAAECAIAAIEAAAAAAAQggAAA=</HashCode>
+      <FileName>ClassDiagram\Dialogs\TreeDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.BorderedTextBox" Collapsed="true">
+    <Position X="37.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAACAAAgACAAQAIAACAQAAAAAAgAAICQEBAAA=</HashCode>
+      <FileName>ClassDiagram\Editors\BorderedTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.ClassTypeEditor" Collapsed="true">
+    <Position X="16.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAZEBAAACAAAAAAAACAAAADQIBAAAAAAAQCQAAgAAA=</HashCode>
+      <FileName>ClassDiagram\Editors\ClassTypeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.CommentEditor" Collapsed="true">
+    <Position X="23.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAAAACAAAAAAAgCAAAACAAAAAABAAAACAAAARAA=</HashCode>
+      <FileName>ClassDiagram\Editors\CommentEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.CompositeTypeEditor" Collapsed="true">
+    <Position X="16.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NgkFkFClEmCYAAYCRgSRAIGiI4RQQmAIoCQeAAVACMU=</HashCode>
+      <FileName>ClassDiagram\Editors\CompositeTypeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.DelegateEditor" Collapsed="true">
+    <Position X="19" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABFFCkCCAYACIAAgSQAEAKEACAwgCIAAAeAIRABAU=</HashCode>
+      <FileName>ClassDiagram\Editors\DelegateEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.EditorWindow" Collapsed="true">
+    <Position X="16.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAABAAAAAAAAAACAAAAQAA=</HashCode>
+      <FileName>ClassDiagram\Editors\EditorWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.EnumEditor" Collapsed="true">
+    <Position X="21.25" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABEFCkiCAYACIAAgSQAEAKAACAQkCIAAAeBIRABAU=</HashCode>
+      <FileName>ClassDiagram\Editors\EnumEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.EnumValueEditor" Collapsed="true">
+    <Position X="12.25" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMBAAQAAAAAAAAAAAAAEAAAAAGAAAAAQAACAAAARAA=</HashCode>
+      <FileName>ClassDiagram\Editors\EnumValueEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.FloatingEditor" Collapsed="true">
+    <Position X="15.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAEAAAIAAAAAAAAAAAAAEAAAABAAAA=</HashCode>
+      <FileName>ClassDiagram\Editors\FloatingEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.ItemEditor" Collapsed="true">
+    <Position X="11.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMBWBQAACAwCgIAAiCAEEACAAHAAAAAQQASAEgIQAA=</HashCode>
+      <FileName>ClassDiagram\Editors\ItemEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.MemberEditor" Collapsed="true">
+    <Position X="14.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>dhOR3FQkEGA4CwYiQyyREMCiK4WEQCEI5UAeAk1IRKk=</HashCode>
+      <FileName>ClassDiagram\Editors\MemberEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.ParameterEditor" Collapsed="true">
+    <Position X="10" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMBAAQAAAAAAAAAAAAAEAAAAAGAAAAAQAACAAAARAA=</HashCode>
+      <FileName>ClassDiagram\Editors\ParameterEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Editors.TypeEditor" Collapsed="true">
+    <Position X="19" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>ClassDiagram\Editors\TypeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.ClassShape" Collapsed="true">
+    <Position X="6.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAQAAQAAIAAAAAAAAAACAAAkAgAGAAAAAIAEABI=</HashCode>
+      <FileName>ClassDiagram\Shapes\ClassShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.CommentShape" Collapsed="true">
+    <Position X="13" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQAACAEAkBAAgAEQAQjGAgCCAAEAAAFLAAAiAAIAIA=</HashCode>
+      <FileName>ClassDiagram\Shapes\CommentShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.CompositeTypeShape" Collapsed="true">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAEQAAUhgRAAQAAAgAQAAAqgEAAAAAQAYAwAgABURAI=</HashCode>
+      <FileName>ClassDiagram\Shapes\CompositeTypeShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.DelegateShape" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAEAAASgARAIYEAAAEQAACgiEICkAgACYAgAgIAQAAI=</HashCode>
+      <FileName>ClassDiagram\Shapes\DelegateShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.EnumShape" Collapsed="true">
+    <Position X="10.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAEQAAQhARAAYAAAAEQAAAgiEQQkAgICYggEgIAQAAI=</HashCode>
+      <FileName>ClassDiagram\Shapes\EnumShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.InterfaceShape" Collapsed="true">
+    <Position X="1.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAIAAAAAAAAAACAAAkAgACAAEAAIAEAAI=</HashCode>
+      <FileName>ClassDiagram\Shapes\InterfaceShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.ResizeEventArgs" Collapsed="true">
+    <Position X="29" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Shapes\ResizeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.Shape" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MQSAhAgIBIQAgCGUQIZQGEhqEDBcBAAJrCGSAIEy4aI=</HashCode>
+      <FileName>ClassDiagram\Shapes\Shape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.StructureShape" Collapsed="true">
+    <Position X="4" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAABACAAAkBgACAAAAAIAEAAI=</HashCode>
+      <FileName>ClassDiagram\Shapes\StructureShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.ClassDiagram.Shapes.TypeShape" Collapsed="true">
+    <Position X="6.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>caYAkQQoDvRI4gCEwER5EhmAGgmiAgAHKAGIiIQKAII=</HashCode>
+      <FileName>ClassDiagram\Shapes\TypeShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NClass.DiagramEditor.Properties.Resources" Collapsed="true">
+    <Position X="30.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>o2cIjk8VWVXLWpK4Uw43viwsB025iJiOVUoAC1Dmkc4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NClass.DiagramEditor.IClipboardItem" Collapsed="true">
+    <Position X="29" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IClipboardItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.DiagramEditor.IDocument" Collapsed="true">
+    <Position X="10.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAAAAAQAwEEBEAggAQAEAEAAEAApgADAAACBgAA=</HashCode>
+      <FileName>IDocument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.DiagramEditor.IDocumentVisualizer" Collapsed="true">
+    <Position X="30.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAEAABEQAAAAEAAAAAAAACAAEAAAAAgAQ=</HashCode>
+      <FileName>IDocumentVisualizer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.DiagramEditor.IEditable" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARABAAAACAAAAAAAAAAAAAABgAKAAAAgAAAQAAAAAA=</HashCode>
+      <FileName>IEditable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.DiagramEditor.IGraphics" Collapsed="true">
+    <Position X="32.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAJAAIAAAGACAgEQAAAAAAICJAEAAIAAAwAA=</HashCode>
+      <FileName>IGraphics.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NClass.DiagramEditor.IPrintable" Collapsed="true">
+    <Position X="17.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAEAAA=</HashCode>
+      <FileName>IPrintable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NClass.DiagramEditor.GradientStyle" Collapsed="true">
+    <Position X="32.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAEAAAAIAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Style.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NClass.DiagramEditor.ClassDiagram.ChevronMode" Collapsed="true">
+    <Position X="29" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>ClassDiagram\ChevronMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NClass.DiagramEditor.ClassDiagram.ClearTypeMode" Collapsed="true">
+    <Position X="30.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\ClearTypeMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NClass.DiagramEditor.ClassDiagram.Connections.LineOrientation" Collapsed="true">
+    <Position X="34.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Connections\LineOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="NClass.DiagramEditor.AbsoluteMouseEventHandler" Collapsed="true">
+    <Position X="29" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbsoluteMouseEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.DocumentEventHandler" Collapsed="true">
+    <Position X="32.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DocumentEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.DocumentMovedEventHandler" Collapsed="true">
+    <Position X="34.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DocumentMovedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.PopupWindowEventHandler" Collapsed="true">
+    <Position X="37.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EditorControlEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.ClassDiagram.MoveEventHandler" Collapsed="true">
+    <Position X="36" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\MoveEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.ClassDiagram.Connections.BendPointEventHandler" Collapsed="true">
+    <Position X="30.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDiagram\Connections\BendPointEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NClass.DiagramEditor.ClassDiagram.Shapes.ResizeEventHandler" Collapsed="true">
+    <Position X="29" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ClassDiagram\Shapes\ResizeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
